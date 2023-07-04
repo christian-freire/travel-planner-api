@@ -8,7 +8,7 @@ import (
 	"github.com/spf13/viper"
 )
 
-func OpenAIService() {
+func OpenAIService(Question string) {
 
 	viper.AutomaticEnv()
 
@@ -29,7 +29,7 @@ func OpenAIService() {
 			Messages: []openai.ChatCompletionMessage{
 				{
 					Role:    openai.ChatMessageRoleUser,
-					Content: "Qual a cidade que tem a estátua da liberdade?",
+					Content: Question,
 				},
 			},
 		},
