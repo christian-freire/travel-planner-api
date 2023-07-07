@@ -1,4 +1,5 @@
 # Travel Planner API 🛫
+by: Christian Freire
 
 - [Description](#description)
 - [Requirements](#requirements)
